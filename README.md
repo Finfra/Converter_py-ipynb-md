@@ -31,8 +31,8 @@ cd ..
 
 # Usage
 ![Command Map](img/CommandMap.png)
-![Usage1](img/Usage1.png)
-![Usage1](img/Usage2.png)
+![Usage1](img/usage1.png)
+![Usage1](img/usage2.png)
 ```
 cd test
 ls
