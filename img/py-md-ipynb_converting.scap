@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.2" ID="7EACD8C7-6E06-431B-AB1B-8A1552EE304B">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="282.894928,604.032471" Width="45.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>ipynb</String>
+            <ConnectedNoteIDs>1-2</ConnectedNoteIDs>
+            <PointsToNoteIDs>1</PointsToNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="232.983841,819.143494" Width="29.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>py</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>2</PointsToNoteIDs>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="356.275452,820.033875" Width="33.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>md</String>
+            <ConnectedNoteIDs>0-1</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="469.239532,596.824402" Width="45.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>ipynb</String>
+            <ConnectedNoteIDs>7-8</ConnectedNoteIDs>
+            <PointsToNoteIDs>8</PointsToNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="408.683075,821.113647" Width="29.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>py</String>
+            <ConnectedNoteIDs>6, 8</ConnectedNoteIDs>
+            <PointsToNoteIDs>6</PointsToNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="525.64325,821.065308" Width="33.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>md</String>
+            <ConnectedNoteIDs>6-7</ConnectedNoteIDs>
+            <PointsToNoteIDs>7</PointsToNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="895.633789,389.046783" Width="200.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>```bash
+python3 -m pip install 'jupyter_contrib_nbextensions'
+python3 -m pip install nbconvert
+jupyter nbconvert --to markdown 01.MLP_verySimple.ipynb
+```
+
+
+
+```R
+devtools::install_github("mkearney/rmd2jupyter")
+devtools::install_github("mkearney/rmd2jupyter")
+#1
+library(rmd2jupyter)
+rmd2jupyter("01.MLP_verySimple.md")
+
+```
+</String>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="283.316925,999.336975" Width="45.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>ipynb</String>
+            <ConnectedNoteIDs>14-15</ConnectedNoteIDs>
+            <PointsToNoteIDs>15</PointsToNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="226.0,1089.562988" Width="29.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>py</String>
+            <ConnectedNoteIDs>13, 15</ConnectedNoteIDs>
+            <PointsToNoteIDs>13</PointsToNoteIDs>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="349.154541,1089.010254" Width="33.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>md</String>
+            <ConnectedNoteIDs>13-14</ConnectedNoteIDs>
+            <PointsToNoteIDs>14</PointsToNoteIDs>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="459.030701,1010.48938" Width="45.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>ipynb</String>
+            <ConnectedNoteIDs>17-18</ConnectedNoteIDs>
+            <PointsToNoteIDs>17</PointsToNoteIDs>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="414.82428,1087.53125" Width="29.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>py</String>
+            <ConnectedNoteIDs>16, 18</ConnectedNoteIDs>
+            <PointsToNoteIDs>18</PointsToNoteIDs>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="512.564331,1086.699585" Width="33.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>md</String>
+            <ConnectedNoteIDs>16-17</ConnectedNoteIDs>
+            <PointsToNoteIDs>16</PointsToNoteIDs>
+        </Note>
+        <Note ID="19" FontSize="17.0" Position="356.853729,555.069275" Width="120.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>Library Used</String>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,12</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="20" FontSize="17.0" Position="342.86026,942.048889" Width="138.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>Command Map</String>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,11</FormatRange>
+            </Formatting>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <Labels>
+        <Label IDs="6,8">jupyter nbconvert --to markdown</Label>
+        <Label IDs="0,2">mkearney/rmd2jupyter</Label>
+        <Label IDs="13,15">j2m</Label>
+        <Label IDs="7,8">x</Label>
+        <Label IDs="1,2">x</Label>
+        <Label IDs="16,17">j2p</Label>
+        <Label IDs="6,7">p2j command</Label>
+        <Label IDs="13,14">p2j</Label>
+        <Label IDs="0,1">Export by Jupyter or "p2j -r "</Label>
+        <Label IDs="17,18">p2m</Label>
+        <Label IDs="16,18">m2j</Label>
+        <Label IDs="14,15">m2p</Label>
+    </Labels>
+    <AutoFit>0-2, 6-8, 13-20</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="6C9B633C-AF9A-484B-8929-ECBA3CE5FBCE" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.668962 0.810287 0.895092</BorderColor>
+            <FillColor>0.743291 0.900319 0.994547</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="1191F9E1-92AE-4E24-8742-76EE70D22722" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.669404 0.885265 0.567007</BorderColor>
+            <FillColor>0.743783 0.983628 0.630008</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="419D9AB7-D9E5-45E9-BDAF-DD366DB84BD1" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+            <FillColor>0.989115 0.814114 0.999483</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="20FF212B-8BAE-4BEB-A3B9-90FFCCB11DA3" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+            <FillColor>0.993942 0.786413 0.795449</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="3E09B998-10B9-4B66-81C4-F933E227D4DD" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.877748 0.828289 0.562126</BorderColor>
+            <FillColor>0.975275 0.920321 0.624585</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="ACCCE6B3-54CD-45EF-AD16-B28D42F9DEBD" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985954 0.0 0.02694</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="44ECB35E-54FC-46F1-9B78-938B0364DE97" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999995 1.0 1.0</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <NoteXPadding>8.0</NoteXPadding>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
