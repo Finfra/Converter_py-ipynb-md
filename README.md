@@ -52,6 +52,9 @@ j2p d.ipynb
 ls
 ```
 
+# Todo
+* Install Manual for MS Windows
+
 # Cf
 ## Library Used
 ![Library Used](img/LibraryUsed.png)
