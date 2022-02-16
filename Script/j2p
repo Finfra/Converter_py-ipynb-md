@@ -1,0 +1,2 @@
+#!/bin/bash
+p2j -r $1

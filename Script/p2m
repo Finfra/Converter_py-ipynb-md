@@ -1,0 +1,7 @@
+#!/bin/bash
+name=$1
+fName=${name%%.*}
+p2j $name
+j2m $fName.ipynb
+echo file removed $fName.ipynb
+rm $fName.ipynb

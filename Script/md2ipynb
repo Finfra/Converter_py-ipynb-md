@@ -1,0 +1,5 @@
+#!/usr/bin/env Rscript
+library(rmd2jupyter)
+
+args = commandArgs(trailingOnly=TRUE)
+rmd2jupyter(args[1])
