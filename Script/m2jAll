@@ -1,0 +1,45 @@
+#!/bin/bash
+path=$1
+force=$2
+[ ${#force} -eq 0 ] && force=--no-force
+[ $force = '-f' ] && echo force
+
+
+if [ $(uname) = 'Darwin' ] ; then
+  targetPath=$(greadlink -f $path)
+else
+  targetPath=$(readlink -f $path)
+fi
+#echo $targetPath
+
+for i in $(find $targetPath -type d -maxdepth 1  -not -name ".*"); do
+    if [[ ! $i = $targetPath ]] && [[ ! ${i##*/} = zManager ]]&& [[ ! ${i##*/} = .git ]] \
+         && [[ ! ! ${i##*/} = .git  ]]; then
+      echo --- $i ------------------
+      for j in $(find $i -name '*.md'); do
+        mdFile=${j##*/}
+        mdFileName=${mdFile%.*}
+        ipynbFileName=$mdFileName'.ipynb'
+        basePath=$(dirname $j)
+        ipynbPath=$basePath/$ipynbFileName
+        # ipynb파일이 있는 것만 변환(README.md 같은 파일은 변환할 필요 없으니까)
+        if [ -f $ipynbPath ] && [ `expr "$ipynbPath" : '.*\/\.'` -eq 0 ]; then
+                                 #  Path에 숨김파일 없으면
+          echo ' ' $j
+          if [ $force = '-f' ] ;then
+             m2j $j
+          else
+            if [ "$ipynbPath" -nt "$j" ]; then
+                echo "----------"
+                echo $ipynbPath" is latest file then "$j
+                echo "no change, if u want convert use -f option"
+                echo "----------"
+            else
+                m2j $j
+            fi
+          fi
+        fi
+      done
+
+    fi
+done

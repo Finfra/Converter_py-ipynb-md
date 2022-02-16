@@ -1,6 +1,6 @@
 #!/bin/bash
 name=$1
-fName=${name%%.*}
+fName=${name%.*}
 #echo $fName.ipynb
 cp $name $fName.ipynb
 md2ipynb $fName.ipynb

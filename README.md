@@ -21,7 +21,23 @@ python3 -m pip install 'jupyter_contrib_nbextensions'
 python3 -m pip install nbconvert
 ```
 
-5. Install Script
+5. OS Package
+```
+# OS X
+brew install coreutils
+# Debian, Ubuntu, Kali Linux, Raspbian
+apt-get install coreutils
+# CentOS
+yum install coreutils
+# Alpine
+apk add coreutils
+# Arch Linux
+pacman -S coreutils
+# Fedora
+dnf install coreutils
+```
+
+6. Install Script
 ```
 git clone https://github.com/Finfra/Converter_py-ipynb-md.git
 cd Script
@@ -29,7 +45,7 @@ cd Script
 cd ..
 ```
 
-# Usage
+# Usage 1 : One File
 ![Command Map](img/CommandMap.png)
 ![Usage1](img/usage1.png)
 ![Usage1](img/usage2.png)
@@ -52,8 +68,25 @@ j2p d.ipynb
 ls
 ```
 
+# Usage 2 : Batch
+## Convert All Jupyter Notebook file to Markdown file.
+```
+. Converter_py-ipynb-md/Script/j2mAll.sh ..
+```
+
+## Convert All Markdown file to Jupyter Notebook file
+```
+./Converter_py-ipynb-md/Script/m2jAll ..  # It works if a md file is more last version then a ipynb file.
+# or
+./Converter_py-ipynb-md/Script/m2jAll .. -f
+```
+
+
 # Todo
 * Install Manual for MS Windows
+* Markdown 생성 될때 ipynb파일의 각 셀의 결과까지 저장되는 문제 해결
+  - 해당 파일을 다시 ipynb파일로 바꾸면 셀의 실행 결과와 목차들이 붙는 문제가 있음.
+  - 즉, 정확히 원복되지 않음.
 
 # Cf
 ## Library Used

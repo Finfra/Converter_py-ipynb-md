@@ -1,6 +1,6 @@
 #!/bin/bash
 name=$1
-fName=${name%%.*}
+fName=${name%.*}
 m2j $name
 j2p $fName.ipynb
 echo file removed $fName.ipynb
