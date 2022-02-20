@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Source : https://github.com/Finfra/Converter_py-ipynb-md.git
+
 path=$1
 force=$2
 [ ${#force} -eq 0 ] && force=--no-force

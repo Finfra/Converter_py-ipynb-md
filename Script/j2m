@@ -1,2 +1,7 @@
 #!/bin/bash
+
+# Source : https://github.com/Finfra/Converter_py-ipynb-md.git
+
+cat $1 |  jq 'del(.cells|.[]|.outputs[0])'>/tmp/tmp.ipynb
+mv /tmp/tmp.ipynb $1
 jupyter nbconvert --to markdown $1

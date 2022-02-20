@@ -1,4 +1,7 @@
 #!/usr/bin/env Rscript
+
+# Source : https://github.com/Finfra/Converter_py-ipynb-md.git
+
 library(rmd2jupyter)
 
 args = commandArgs(trailingOnly=TRUE)
