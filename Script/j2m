@@ -2,6 +2,12 @@
 
 # Source : https://github.com/Finfra/Converter_py-ipynb-md.git
 
-cat $1 |  jq 'del(.cells|.[]|.outputs[0])'>/tmp/tmp.ipynb
-mv /tmp/tmp.ipynb $1
-jupyter nbconvert --to markdown $1
+name=$1
+fName=${name%.*}
+
+mv $1 $1.org
+cat $1.org |  jq 'del(.cells|.[]|.outputs[0])'> $1
+
+jupyter nbconvert --to markdown $1 2> /dev/null
+mv $1.org $1
+echo "   to:" $fName.md

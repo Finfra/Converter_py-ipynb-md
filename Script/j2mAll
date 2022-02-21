@@ -1,7 +1,4 @@
 #!/bin/bash
-
-# Source : https://github.com/Finfra/Converter_py-ipynb-md.git
-
 path=$1
 if [ $(uname) = 'Darwin' ] ; then
   targetPath=$(greadlink -f $path)
@@ -13,13 +10,12 @@ fi
 for i in $(find $targetPath -type d -maxdepth 1  -not -name ".*"); do
 
     if [[ ! $i = $targetPath ]] && [[ ! ${i##*/} = zManager ]]&& [[ ! ${i##*/} = .git ]]; then
-      echo --- $i ------------------
+      echo "Foler: "$i
       for j in $(find $i -name '*.ipynb'); do
         if [ `expr "$j" : '.*\/\.'` -eq 0 ]; then #Path에 숨김파일 없으면
-          echo ' ' $j
+          echo " from:" $j
           j2m $j
         fi
       done
-
     fi
 done

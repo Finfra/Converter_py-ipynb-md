@@ -3,7 +3,7 @@
 # Source : https://github.com/Finfra/Converter_py-ipynb-md.git
 
 name=$1
-fName=${name%%.*}
+fName=${name%.*}
 p2j $name
 j2m $fName.ipynb
 echo file removed $fName.ipynb
